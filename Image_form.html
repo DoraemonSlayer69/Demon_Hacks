@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GUESS THE GENDER</title>
+    <style>
+        html, body {
+      min-height: 100%;
+      background-image:
+    url('../pexels-matheus-henrin-4936991.jpg');
+
+      }
+      body, div, form, input, select, textarea, label {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 100px;
+      }
+        h1 {
+      position: center;
+      margin: 0;
+      z-index: 2;
+      line-height: 83px;
+      }
+        form {
+      width: 100%;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 0 8px  #cc7a00;
+      position: center;
+      }
+        button {
+      padding: 10px;
+      border: white;
+      border-radius: 5px;
+      background: #cc7a00;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+        button:hover {
+      background: #ff9800;
+      }
+        .custom-file-input{
+      padding: 10px;
+      border: white;
+      border-radius: 5px;
+      background: #cc7a00;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+        }
+
+        .custom-file-input:hover {
+      background: #ff9800;
+      }
+        .submit-button{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+<body>
+    <div class="testbox">
+      <form action="/upload-image" method="POST" enctype="multipart/form-data">
+         <h1>GUESS THE GENDER</h1>
+        <div class="form-group">
+          <label>Upload an image</label>
+          <div class="custom-file" >
+            <input type="file" class="custom-file-input" name="image" id="image">
+            <label class="custom-file-label" for="image">Select image...</label>
+          </div>
+        </div>
+
+        <div class="submit-button">
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </div>
+      </form>
+    </div>
+</body>
+    </div>
+  </div>
+</div>
